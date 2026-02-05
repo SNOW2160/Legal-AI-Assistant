@@ -194,7 +194,7 @@ Answer:"""
                 prompt,
                 generation_config=genai.types.GenerationConfig(
                     temperature=0.2,
-                    max_output_tokens=300
+                    max_output_tokens=200
                 )
             )
             return response.text
@@ -312,6 +312,7 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"❌ Failed to start VAJRA: {e}")
         sys.exit(1)
+
 
 
 
