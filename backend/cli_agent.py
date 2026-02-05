@@ -189,7 +189,7 @@ Answer:"""
         
         print("🤖 Generating response...")
         try:
-            model = genai.GenerativeModel('gemini-2.5-flash')
+            model = genai.GenerativeModel('gemini-2.0-flash')
             response = model.generate_content(
                 prompt,
                 generation_config=genai.types.GenerationConfig(
@@ -312,6 +312,7 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"❌ Failed to start VAJRA: {e}")
         sys.exit(1)
+
 
 
 
