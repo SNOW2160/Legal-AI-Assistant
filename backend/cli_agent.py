@@ -60,7 +60,7 @@ class VajraCLI:
         """Generate embedding for text using Google's model"""
         try:
             emb = genai.embed_content(
-                model="models/text-embedding-004",
+                model="models/text-embedding-001",
                 content=text
             )["embedding"]
             return np.array(emb, dtype="float32")
